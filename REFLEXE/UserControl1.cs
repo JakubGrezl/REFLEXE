@@ -20,7 +20,6 @@ namespace REFLEXE
         private void Nakrm()
         {
             progressBar1.Value = Math.Clamp(progressBar1.Value + 10,0,100);
-
         }
 
         private void UserControl1_Load(object sender, EventArgs e)

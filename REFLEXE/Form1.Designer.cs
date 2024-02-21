@@ -28,71 +28,129 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.telka1 = new REFLEXE.Telka();
-            this.userControl11 = new REFLEXE.UserControl1();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.SuspendLayout();
+            telka1 = new Telka();
+            userControl11 = new UserControl1();
+            button1 = new Button();
+            button2 = new Button();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            label1 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            label2 = new Label();
+            button3 = new Button();
+            flowLayoutPanel1.SuspendLayout();
+            SuspendLayout();
             // 
             // telka1
             // 
-            this.telka1.Location = new System.Drawing.Point(197, 3);
-            this.telka1.Name = "telka1";
-            this.telka1.Size = new System.Drawing.Size(188, 188);
-            this.telka1.TabIndex = 0;
+            telka1.Location = new Point(173, 2);
+            telka1.Margin = new Padding(3, 2, 3, 2);
+            telka1.Name = "telka1";
+            telka1.Size = new Size(164, 141);
+            telka1.TabIndex = 0;
             // 
             // userControl11
             // 
-            this.userControl11.Location = new System.Drawing.Point(3, 3);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(188, 188);
-            this.userControl11.TabIndex = 1;
+            userControl11.Location = new Point(3, 2);
+            userControl11.Margin = new Padding(3, 2, 3, 2);
+            userControl11.Name = "userControl11";
+            userControl11.Size = new Size(164, 141);
+            userControl11.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(694, 249);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "nakrm";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(607, 187);
+            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(82, 22);
+            button1.TabIndex = 2;
+            button1.Text = "nakrm";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(694, 284);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "vypzap";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Location = new Point(607, 213);
+            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Name = "button2";
+            button2.Size = new Size(82, 22);
+            button2.TabIndex = 3;
+            button2.Text = "vypzap";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel1.Controls.Add(this.userControl11);
-            this.flowLayoutPanel1.Controls.Add(this.telka1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(676, 414);
-            this.flowLayoutPanel1.TabIndex = 4;
+            flowLayoutPanel1.BorderStyle = BorderStyle.FixedSingle;
+            flowLayoutPanel1.Controls.Add(userControl11);
+            flowLayoutPanel1.Controls.Add(telka1);
+            flowLayoutPanel1.Location = new Point(10, 9);
+            flowLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(592, 311);
+            flowLayoutPanel1.TabIndex = 4;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(606, 10);
+            label1.Name = "label1";
+            label1.Size = new Size(62, 15);
+            label1.TabIndex = 5;
+            label1.Text = "Proměnná";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(607, 28);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(81, 23);
+            textBox1.TabIndex = 6;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(609, 72);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(81, 23);
+            textBox2.TabIndex = 8;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(608, 54);
+            label2.Name = "label2";
+            label2.Size = new Size(54, 15);
+            label2.TabIndex = 7;
+            label2.Text = "Hodnota";
+            // 
+            // button3
+            // 
+            button3.Location = new Point(613, 101);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 9;
+            button3.Text = "approve";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(700, 338);
+            Controls.Add(button3);
+            Controls.Add(textBox2);
+            Controls.Add(label2);
+            Controls.Add(textBox1);
+            Controls.Add(label1);
+            Controls.Add(flowLayoutPanel1);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "Form1";
+            Text = "Form1";
+            flowLayoutPanel1.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -102,5 +160,10 @@
         private Button button1;
         private Button button2;
         private FlowLayoutPanel flowLayoutPanel1;
+        private Label label1;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Label label2;
+        private Button button3;
     }
 }
