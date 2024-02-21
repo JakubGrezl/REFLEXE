@@ -23,10 +23,6 @@ namespace REFLEXE
         {
             foreach (Control prvek in flowLayoutPanel1.Controls)
             {
-                //if(prvek is Tucnak)
-                //{
-                //    ((Tucnak)prvek).Nakrm();
-                //}
                 PropertyInfo[] promenne = prvek.GetType().GetProperties(BindingFlags.NonPublic | BindingFlags.Instance);
                 string text = "";
                 foreach (PropertyInfo promenna in promenne)
